@@ -10,7 +10,6 @@ IOS_TEST_CMD="xcodebuild test -workspace RxFormState.xcworkspace -scheme RxFormS
 
 #WATCHOS_TEST_CMD="xcodebuild build -workspace RxFormState.xcworkspace -scheme RxFormState-watchOS -sdk watchsimulator -destination 'platform=watchOS Simulator,name=Apple Watch - 42mm'"
 
-carthage bootstrap
 which -s xcpretty
 XCPRETTY_INSTALLED=$?
 
