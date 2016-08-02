@@ -13,6 +13,14 @@
 		7E3B57B91D514BB8008B3D02 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B57AE1D514BA7008B3D02 /* Form.swift */; };
 		7E3B57BA1D514BB8008B3D02 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B57AF1D514BA7008B3D02 /* ValidationError.swift */; };
 		7E3B57BB1D514BE4008B3D02 /* RxFormState.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3B57B41D514BA7008B3D02 /* RxFormState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E3B57C91D514E8A008B3D02 /* FieldFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B57AC1D514BA7008B3D02 /* FieldFactory.swift */; };
+		7E3B57CA1D514E8A008B3D02 /* FieldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B57AD1D514BA7008B3D02 /* FieldState.swift */; };
+		7E3B57CB1D514E8A008B3D02 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B57AE1D514BA7008B3D02 /* Form.swift */; };
+		7E3B57CC1D514E8A008B3D02 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B57AF1D514BA7008B3D02 /* ValidationError.swift */; };
+		7E3B57CD1D514E8E008B3D02 /* ObservableType+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B57B11D514BA7008B3D02 /* ObservableType+Optional.swift */; };
+		7E3B57D51D51500A008B3D02 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3B57CF1D514EB1008B3D02 /* RxSwift.framework */; };
+		7E3B57D61D515011008B3D02 /* ValidationNEL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3B57D11D514EB7008B3D02 /* ValidationNEL.framework */; };
+		7E3B57D71D515017008B3D02 /* Swiftz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3B57D31D514EC3008B3D02 /* Swiftz.framework */; };
 		7E6584051D2F2CCD00BC8204 /* RxFormState.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6583FA1D2F2CCD00BC8204 /* RxFormState.framework */; };
 		7E65840A1D2F2CCD00BC8204 /* RxFormStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6584091D2F2CCD00BC8204 /* RxFormStateTests.swift */; };
 		7E6584151D2F321D00BC8204 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6584141D2F321D00BC8204 /* RxSwift.framework */; };
@@ -42,6 +50,11 @@
 		7E3B57B11D514BA7008B3D02 /* ObservableType+Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Optional.swift"; sourceTree = "<group>"; };
 		7E3B57B31D514BA7008B3D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E3B57B41D514BA7008B3D02 /* RxFormState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxFormState.h; sourceTree = "<group>"; };
+		7E3B57C11D514E58008B3D02 /* RxFormState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxFormState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3B57CE1D514E96008B3D02 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		7E3B57CF1D514EB1008B3D02 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/RxFormState-dkhacwufgzhfcneovjhptcywcvoj/Build/Products/Debug/RxSwift.framework"; sourceTree = "<group>"; };
+		7E3B57D11D514EB7008B3D02 /* ValidationNEL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ValidationNEL.framework; path = "../../../Library/Developer/Xcode/DerivedData/RxFormState-dkhacwufgzhfcneovjhptcywcvoj/Build/Products/Debug/ValidationNEL.framework"; sourceTree = "<group>"; };
+		7E3B57D31D514EC3008B3D02 /* Swiftz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftz.framework; path = "../../../Library/Developer/Xcode/DerivedData/RxFormState-dkhacwufgzhfcneovjhptcywcvoj/Build/Products/Debug/Swiftz.framework"; sourceTree = "<group>"; };
 		7E6583FA1D2F2CCD00BC8204 /* RxFormState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxFormState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6584041D2F2CCD00BC8204 /* RxFormStateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxFormStateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6584091D2F2CCD00BC8204 /* RxFormStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFormStateTests.swift; sourceTree = "<group>"; };
@@ -63,6 +76,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E3B57BD1D514E58008B3D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3B57D71D515017008B3D02 /* Swiftz.framework in Frameworks */,
+				7E3B57D61D515011008B3D02 /* ValidationNEL.framework in Frameworks */,
+				7E3B57D51D51500A008B3D02 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E6583F61D2F2CCD00BC8204 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,6 +142,7 @@
 		7E3B57B21D514BA7008B3D02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7E3B57CE1D514E96008B3D02 /* Info-macOS.plist */,
 				7E3B57B31D514BA7008B3D02 /* Info.plist */,
 				7E3B57B41D514BA7008B3D02 /* RxFormState.h */,
 			);
@@ -141,6 +165,7 @@
 			children = (
 				7E6583FA1D2F2CCD00BC8204 /* RxFormState.framework */,
 				7E6584041D2F2CCD00BC8204 /* RxFormStateTests.xctest */,
+				7E3B57C11D514E58008B3D02 /* RxFormState.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +183,9 @@
 		7E65841C1D2F337800BC8204 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E3B57D31D514EC3008B3D02 /* Swiftz.framework */,
+				7E3B57D11D514EB7008B3D02 /* ValidationNEL.framework */,
+				7E3B57CF1D514EB1008B3D02 /* RxSwift.framework */,
 				7EE1EF2D1D5025B300DA2564 /* ValidationNEL.framework */,
 				7E6584341D2F529D00BC8204 /* RxTests.framework */,
 				7E65842E1D2F43C000BC8204 /* Swiftz.framework */,
@@ -193,6 +221,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7E3B57BE1D514E58008B3D02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E6583F71D2F2CCD00BC8204 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -204,6 +239,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7E3B57C01D514E58008B3D02 /* RxFormState-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3B57C61D514E58008B3D02 /* Build configuration list for PBXNativeTarget "RxFormState-macOS" */;
+			buildPhases = (
+				7E3B57BC1D514E58008B3D02 /* Sources */,
+				7E3B57BD1D514E58008B3D02 /* Frameworks */,
+				7E3B57BE1D514E58008B3D02 /* Headers */,
+				7E3B57BF1D514E58008B3D02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxFormState-macOS";
+			productName = "RxFormState-macOS";
+			productReference = 7E3B57C11D514E58008B3D02 /* RxFormState.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		7E6583F91D2F2CCD00BC8204 /* RxFormState */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E65840E1D2F2CCD00BC8204 /* Build configuration list for PBXNativeTarget "RxFormState" */;
@@ -250,6 +303,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Lance Zhu";
 				TargetAttributes = {
+					7E3B57C01D514E58008B3D02 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PURSU9V83K;
+					};
 					7E6583F91D2F2CCD00BC8204 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = PURSU9V83K;
@@ -274,11 +331,19 @@
 			targets = (
 				7E6583F91D2F2CCD00BC8204 /* RxFormState */,
 				7E6584031D2F2CCD00BC8204 /* RxFormStateTests */,
+				7E3B57C01D514E58008B3D02 /* RxFormState-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7E3B57BF1D514E58008B3D02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E6583F81D2F2CCD00BC8204 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +361,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7E3B57BC1D514E58008B3D02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3B57CA1D514E8A008B3D02 /* FieldState.swift in Sources */,
+				7E3B57CC1D514E8A008B3D02 /* ValidationError.swift in Sources */,
+				7E3B57C91D514E8A008B3D02 /* FieldFactory.swift in Sources */,
+				7E3B57CD1D514E8E008B3D02 /* ObservableType+Optional.swift in Sources */,
+				7E3B57CB1D514E8A008B3D02 /* Form.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E6583F51D2F2CCD00BC8204 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +405,46 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7E3B57C71D514E58008B3D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LZ.RxFormState-macOS";
+				PRODUCT_NAME = RxFormState;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7E3B57C81D514E58008B3D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LZ.RxFormState-macOS";
+				PRODUCT_NAME = RxFormState;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		7E65840C1D2F2CCD00BC8204 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -427,11 +544,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Swiftz/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/Carthage/Checkouts/ValidationNEL/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -451,11 +564,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Swiftz/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/Carthage/Checkouts/ValidationNEL/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -497,6 +606,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E3B57C61D514E58008B3D02 /* Build configuration list for PBXNativeTarget "RxFormState-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3B57C71D514E58008B3D02 /* Debug */,
+				7E3B57C81D514E58008B3D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7E6583F41D2F2CCD00BC8204 /* Build configuration list for PBXProject "RxFormState" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
