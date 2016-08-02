@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+set -e
+
+IOS_TEST_CMD="xcodebuild test -workspace ValidationNEL.xcworkspace -scheme ValidationNEL-iOS -configuration Debug -sdk iphonesimulator9.3 -destination 'platform=iOS Simulator,name=iPhone 6s'"
+
+TVOS_TEST_CMD="xcodebuild build test -workspace ValidationNEL.xcworkspace -scheme ValidationNEL-tvOS -sdk appletvsimulator9.2 -destination 'platform=tvOS Simulator,name=Apple TV 1080p'"
+
+MACOS_TEST_CMD="xcodebuild build test -workspace ValidationNEL.xcworkspace -scheme ValidationNEL-macOS -sdk macosx10.11"
+
+WATCHOS_TEST_CMD="xcodebuild build -workspace ValidationNEL.xcworkspace -scheme ValidationNEL-watchOS -sdk watchsimulator2.2 -destination 'platform=watchOS Simulator,name=Apple Watch - 42mm'"
+
+which -s xcpretty
+XCPRETTY_INSTALLED=$?
+
+if [[ $TRAVIS || $XCPRETTY_INSTALLED == 0 ]]; then
+  eval "set -o pipefail && ${IOS_TEST_CMD} | tee xcodebuild.log | xcpretty -c"
+  eval "set -o pipefail && ${TVOS_TEST_CMD} | tee xcodebuild.log | xcpretty -c"
+  eval "set -o pipefail && ${MACOS_TEST_CMD} | tee xcodebuild.log | xcpretty -c"
+  eval "set -o pipefail && ${WATCHOS_TEST_CMD} | tee xcodebuild.log | xcpretty -c"
+else
+  eval "$IOS_TEST_CMD"
+  eval "$TVOS_TEST_CMD"
+  eval "$MACOS_TEST_CMD"
+  eval "$WATCHOS_TEST_CMD"
+fi

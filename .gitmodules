@@ -7,3 +7,7 @@
 [submodule "Carthage/Checkouts/RxSwift"]
 	path = Carthage/Checkouts/RxSwift
 	url = https://github.com/ReactiveX/RxSwift.git
+[submodule "Carthage/Checkouts/Swiftz"]
+	url = https://github.com/typelift/Swiftz.git
+[submodule "Carthage/Checkouts/ValidationNEL"]
+	url = https://github.com/Hxucaa/ValidationNEL.git

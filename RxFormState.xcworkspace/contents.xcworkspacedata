@@ -5,6 +5,12 @@
       location = "container:RxFormState.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Carthage/Checkouts/ValidationNEL/ValidationNEL.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/Swiftz/Swiftz.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Carthage/Checkouts/Nimble/Nimble.xcodeproj">
    </FileRef>
    <FileRef
