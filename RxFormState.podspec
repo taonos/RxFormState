@@ -12,5 +12,5 @@ Pod::Spec.new do |spec|
   spec.source_files = "Sources/**/*.{h,swift}"
 
   spec.dependency "RxSwift", " ~> 2.0"
-  spec.dependency "ValidationNEL", "~> 0.2.0"
+  spec.dependency "ValidationNEL", "~> 0.3.0"
 end

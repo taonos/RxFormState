@@ -9,7 +9,7 @@
 	url = https://github.com/ReactiveX/RxSwift.git
 [submodule "Carthage/Checkouts/Swiftz"]
 	path = Carthage/Checkouts/Swiftz
-	url = https://github.com/typelift/Swiftz.git
+	url = https://github.com/Hxucaa/Swiftz.git
 [submodule "Carthage/Checkouts/ValidationNEL"]
 	path = Carthage/Checkouts/ValidationNEL
 	url = https://github.com/Hxucaa/ValidationNEL.git
