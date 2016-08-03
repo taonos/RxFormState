@@ -9,8 +9,8 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, "8.0"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/Hxucaa/RxFormState.git", tag: "v#{spec.version}", submodules: true }
-  spec.source_files = "RxFormState/**/*.{h,swift}"
+  spec.source_files = "Sources/**/*.{h,swift}"
 
   spec.dependency "RxSwift", " ~> 2.0"
-  spec.dependency "ValidationNEL", "~> 0.2"
+  spec.dependency "ValidationNEL", "~> 0.2.0"
 end
