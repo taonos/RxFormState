@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "Bootstrap frameworks..."
+carthage bootstrap
+echo "Copy Cartfile.resolved..."
+cp Cartfile.resolved Carthage/Build

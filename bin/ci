@@ -1,6 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 set -e
+
+# Variables
 
 IOS_TEST_CMD="xcodebuild test -workspace RxFormState.xcworkspace -scheme RxFormState -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s'"
 
@@ -10,11 +12,12 @@ IOS_TEST_CMD="xcodebuild test -workspace RxFormState.xcworkspace -scheme RxFormS
 
 #WATCHOS_TEST_CMD="xcodebuild build -workspace RxFormState.xcworkspace -scheme RxFormState-watchOS -sdk watchsimulator -destination 'platform=watchOS Simulator,name=Apple Watch - 42mm'"
 
-#pod lib lint
-
 
 which -s xcpretty
 XCPRETTY_INSTALLED=$?
+
+# Run tests
+echo "Running tests..."
 
 if [[ $TRAVIS || $XCPRETTY_INSTALLED == 0 ]]; then
   eval "set -o pipefail && ${IOS_TEST_CMD} | tee xcodebuild.log | xcpretty -c"

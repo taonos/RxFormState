@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if cmp -s Cartfile.resolved Carthage/Build/Cartfile.resolved; then
+  echo "Frameworks are the same as last build. No need to rebuild."
+else
+  echo "Frameworks are missing or have been updated. Proceed to rebuild"
+  bin/bootstrap
+fi
